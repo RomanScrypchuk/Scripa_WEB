@@ -19,6 +19,11 @@ gulp.task ( 'html', function (done) {
 	done()
 });
 
+gulp.task('fonts', function(done) {
+   return gulp.src('app/fonts/**/*')
+   .pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task ( 'sass', function (done) {
     return gulp.src ( 'app/sass/*.sass')
         .pipe (concat ( 'styles.sass'))
@@ -65,6 +70,7 @@ gulp.task ('watch', function(){
   	});
     gulp.watch('app/*.html').on('change', browserSync.reload);
     gulp.watch('app/js/*.js').on('change', browserSync.reload);
+    gulp.watch('app/fonts/*').on('change', browserSync.reload);
     gulp.watch('app/sass/*.sass', gulp.series('sass'));
     gulp.watch('app/images/*.+(jpg|jpeg|png|gif)').on('change', browserSync.reload);
 });

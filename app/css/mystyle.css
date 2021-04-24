@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Gudea:400,400i,700|Poppins:300,400,500,600,700|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @-moz-keyframes flash {
   0% {
     opacity: 1; }
@@ -7370,7 +7392,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Proxima Nova Regular'!important;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -7385,7 +7407,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Proxima Nova Regular';
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -13082,7 +13104,8 @@ input:focus {
   outline: none; }
 
 .sidebar {
-    background-color: #34495e;
+  font-family: "Proxima Nova Bold";
+  background-color: #34495e;
   min-height: 100vh;
   padding: 0;
   position: fixed;
@@ -13163,7 +13186,7 @@ input:focus {
         background: transparent; }
 
 /* style for off-canvas menu*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
@@ -13237,7 +13260,7 @@ input:focus {
   width: calc(100% - 215px); }
   .navbar .navbar-menu-wrapper .navbar-toggler {
     border: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Proxima Nova Regular';
     font-size: 16px; }
     .navbar .navbar-menu-wrapper .navbar-toggler span {
       font-size: 18px;
@@ -13265,7 +13288,7 @@ input:focus {
   .navbar ul.navbar-nav .nav-link i {
     font-size: 19px; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar {
     flex-direction: row; }
     .navbar .logo img{
@@ -13301,25 +13324,24 @@ input.b-l-blue, table.b-l-blue, .b-l-blue.input-group .form-control, .b-l-blue.i
   background-color: #fff; }
 
 input[type="search"], input, .form-control {
-  color: #636c72;
-  font-weight: 500;
-  font-size: 12px; }
+  color: #96a6a7;
+  font-size: 13px; }
   input[type="search"]::-webkit-input-placeholder, input::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
-    color: #636c72;
-    font-weight: 500;
-    font-size: 12px; }
+    
+  color: #96a6a7;
+  font-size: 13px; }
   input[type="search"]:-moz-placeholder, input:-moz-placeholder, .form-control:-moz-placeholder {
-    color: #636c72;
-    font-weight: 500;
-    font-size: 12px; }
+    
+  color: #96a6a7;
+  font-size: 13px; }
   input[type="search"]::-moz-placeholder, input::-moz-placeholder, .form-control::-moz-placeholder {
-    color: #636c72;
-    font-weight: 500;
-    font-size: 12px; }
+    
+  color: #96a6a7;
+  font-size: 13px; }
   input[type="search"]:-ms-input-placeholder, input:-ms-input-placeholder, .form-control:-ms-input-placeholder {
-    color: #636c72;
-    font-weight: 500;
-    font-size: 12px; }
+    
+  color: #96a6a7;
+  font-size: 13px; }
 
 .p_input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -13649,7 +13671,7 @@ input:focus {
   padding-top: 2px;
   transition: all .8s ease;
   width: calc(100% - 215px); }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .content-wrapper {
       margin-left: -15px;
       width: 100%; } }
@@ -13678,9 +13700,9 @@ pre {
       width: 100%; } }
 
 .navbar.fixed-top + .container-fluid {
-  padding-top: 5rem; }
+  padding-top: 76px; }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .sidebar-icon-only .navbar .navbar-brand-wrapper {
     width: 70px; }
   .sidebar-icon-only .navbar .navbar-menu-wrapper {
@@ -13802,9 +13824,9 @@ table thead tr th {
 
 body,
 html {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
+  font-family: 'Proxima Nova Regular';
+  font-weight: normal;
+  font-size: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -13818,9 +13840,9 @@ html {
   font-weight: 600; }
 
 input {
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
-  min-height: 40px;
+  font-family: 'Proxima Nova Regular';
+  font-size: 15px;
+  min-height: 50px;
   border-radius: 6px;
   padding: 9px 15px; }
 
@@ -14010,6 +14032,8 @@ html {
     margin-right: auto;
 }
 .bg-profile {
+    font-family: 'Proxima Nova Regular';
+    font-size: 13px;
     background-color: #2ecc71;
 }
 .form-control {
@@ -14020,7 +14044,6 @@ html {
 .menu-title {
     color: #96a6a7;
     font-size: 16px;
-    font-weight: 600;
 }
 
 .sidebar-menu .active .nav-link{
@@ -14043,7 +14066,7 @@ html {
 
 .starrating > label
 {
-  color: #222222;
+  color: #96a6a7;
 }
 
 .starrating > input:checked ~ label
@@ -14053,11 +14076,15 @@ html {
 { color: #ff3908 ;  }
 
 .profile-name {
-    color: black; padding-right: 5px; font-weight: bold; font-size: 18px;
+    color: black; 
+    padding-right: 5px; 
+    font-family: "Proxima Nova Bold"; 
+    font-size: 20px;
 }
 
 #pencil, #exit {
     background-color: white;
+    border: #96a6a7 2px solid;
 }
 
 #pencil:hover, #pencil:hover svg, #exit:hover, #exit:hover svg {
@@ -14066,7 +14093,7 @@ html {
   border-color: #2ecc71;
 }
 .content {
-    font-weight: bold;
+    font-family:"Proxima Nova Bold";
     background-color: white;
     border-color: white;
     text-decoration: none;
@@ -14078,15 +14105,71 @@ html {
     border-bottom: #2ecc71 3px solid;
 }
 .content-general {
+  font-size: 14px;
+  color: #96a6a7;
   background: #ecf0f1;
   min-height: calc(100vh - 230px);
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   transition: all .8s ease;
   width: 100%; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .content-wrapper {
-      margin-left: 0;
-      width: 100%; } }
+      margin-left: -15px;
+      width: 100%; } 
+    .last-col {
+      margin-top: 32px;
+    }
+  }
   .content-wrapper.full-page-wrapper {
     margin-left: 0;
-    width: 100%; }
+    width: 100%; 
+  }
+
+  .content-general .headline {
+    height: 80px;
+    text-align: center;
+  }
+  .content-general p{
+    height: 17px;
+    margin-bottom: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
+  .content-general .number{
+    height: 35px;
+    margin-bottom: 17px;
+  }
+  .content-general .line{
+    padding-left: 1.5em;
+    padding-top: 15px;
+    height: 50px;
+    border-bottom : #ecf0f1 1px solid;
+  }
+  .content-general .line p{
+    height: 17px;
+    margin-bottom: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
+  .content-general .row{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .content-general .active , .content-general .line{
+    background : white;
+  }
+  .number{
+    font-family: "Proxima Nova Bold";
+    font-size: 32px;
+  }
+  .show-more {
+    height: 40px;
+    padding-top: 10px;
+    background-color: white;
+    font-family: "Proxima Nova Bold";
+    color: black;
+  }

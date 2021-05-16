@@ -18,11 +18,12 @@
   "homepage": "https://github.com/Scripa-heNkeN/Scripa#readme",
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^1.1.0",
     "gulp-imagemin": "^7.1.0",

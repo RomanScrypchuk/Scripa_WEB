@@ -1,0 +1,1085 @@
+@import url("https://fonts.googleapis.com/css?family=Gudea:400,400i,700|Poppins:300,400,500,600,700|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i")
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css)
+
+@font-face
+  font-family: 'Proxima Nova Regular'
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot')
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format("embedded-opentype"), url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format("woff"), url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format("truetype"), url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format("svg")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Proxima Nova Bold'
+  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot')
+  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format("embedded-opentype"), url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format("woff"), url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format("truetype"), url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format("svg")
+  font-weight: normal
+  font-style: normal
+
+a
+  color: #007bff
+  text-decoration: none
+  background-color: transparent
+  -webkit-text-decoration-skip: objects
+
+  &:hover
+    color: #0056b3
+    text-decoration: underline
+
+  &:not([href]):not([tabindex])
+    color: inherit
+    text-decoration: none
+
+    &:focus, &:hover
+      color: inherit
+      text-decoration: none
+
+    &:focus
+      outline: 0
+
+.container
+  margin-right: auto
+  margin-left: auto
+  padding-right: 15px
+  padding-left: 15px
+  width: 100%
+
+@media (min-width: 576px)
+  .container
+    max-width: 540px
+
+@media (min-width: 768px)
+  .container
+    max-width: 720px
+
+@media (min-width: 992px)
+  .container
+    max-width: 960px
+
+@media (min-width: 1200px)
+  .container
+    max-width: 1140px
+
+.container-fluid
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+  padding-right: 15px
+  padding-left: 15px
+  width: 100%
+
+.row, form.forms-sample
+  display: flex
+  flex-wrap: wrap
+  margin-right: -15px
+  margin-left: -15px
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, form.forms-sample .form-group, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto
+  position: relative
+  width: 100%
+  min-height: 1px
+  padding-right: 15px
+  padding-left: 15px
+
+.col
+  flex-basis: 0
+  flex-grow: 1
+  max-width: 100%
+
+.col-auto
+  flex: 0 0 auto
+  width: auto
+  max-width: none
+
+.col-1
+  flex: 0 0 8.33333%
+  max-width: 8.33333%
+
+.col-2
+  flex: 0 0 16.66667%
+  max-width: 16.66667%
+
+.col-3
+  flex: 0 0 25%
+  max-width: 25%
+
+.col-4
+  flex: 0 0 33.33333%
+  max-width: 33.33333%
+
+.col-5
+  flex: 0 0 41.66667%
+  max-width: 41.66667%
+
+.col-6
+  flex: 0 0 50%
+  max-width: 50%
+
+.col-7
+  flex: 0 0 58.33333%
+  max-width: 58.33333%
+
+.col-8
+  flex: 0 0 66.66667%
+  max-width: 66.66667%
+
+.col-9
+  flex: 0 0 75%
+  max-width: 75%
+
+.col-10
+  flex: 0 0 83.33333%
+  max-width: 83.33333%
+
+.col-11
+  flex: 0 0 91.66667%
+  max-width: 91.66667%
+
+.col-12, form.forms-sample .form-group
+  flex: 0 0 100%
+  max-width: 100%
+
+@media (min-width: 576px)
+  .col-sm
+    flex-basis: 0
+    flex-grow: 1
+    max-width: 100%
+
+  .col-sm-auto
+    flex: 0 0 auto
+    width: auto
+    max-width: none
+
+  .col-sm-1
+    flex: 0 0 8.33333%
+    max-width: 8.33333%
+
+  .col-sm-2
+    flex: 0 0 16.66667%
+    max-width: 16.66667%
+
+  .col-sm-3
+    flex: 0 0 25%
+    max-width: 25%
+
+  .col-sm-4
+    flex: 0 0 33.33333%
+    max-width: 33.33333%
+
+  .col-sm-5
+    flex: 0 0 41.66667%
+    max-width: 41.66667%
+
+  .col-sm-6, form.forms-sample .form-group
+    flex: 0 0 50%
+    max-width: 50%
+
+  .col-sm-7
+    flex: 0 0 58.33333%
+    max-width: 58.33333%
+
+  .col-sm-8
+    flex: 0 0 66.66667%
+    max-width: 66.66667%
+
+  .col-sm-9
+    flex: 0 0 75%
+    max-width: 75%
+
+  .col-sm-10
+    flex: 0 0 83.33333%
+    max-width: 83.33333%
+
+  .col-sm-11
+    flex: 0 0 91.66667%
+    max-width: 91.66667%
+
+  .col-sm-12
+    flex: 0 0 100%
+    max-width: 100%
+
+@media (min-width: 768px)
+  .col-md
+    flex-basis: 0
+    flex-grow: 1
+    max-width: 100%
+
+  .col-md-auto
+    flex: 0 0 auto
+    width: auto
+    max-width: none
+
+  .col-md-1
+    flex: 0 0 8.33333%
+    max-width: 8.33333%
+
+  .col-md-2
+    flex: 0 0 16.66667%
+    max-width: 16.66667%
+
+  .col-md-3
+    flex: 0 0 25%
+    max-width: 25%
+
+  .col-md-4
+    flex: 0 0 33.33333%
+    max-width: 33.33333%
+
+  .col-md-5
+    flex: 0 0 41.66667%
+    max-width: 41.66667%
+
+  .col-md-6, form.forms-sample .form-group
+    flex: 0 0 50%
+    max-width: 50%
+
+  .col-md-7
+    flex: 0 0 58.33333%
+    max-width: 58.33333%
+
+  .col-md-8
+    flex: 0 0 66.66667%
+    max-width: 66.66667%
+
+  .col-md-9
+    flex: 0 0 75%
+    max-width: 75%
+
+  .col-md-10
+    flex: 0 0 83.33333%
+    max-width: 83.33333%
+
+  .col-md-11
+    flex: 0 0 91.66667%
+    max-width: 91.66667%
+
+  .col-md-12
+    flex: 0 0 100%
+    max-width: 100%
+
+@media (min-width: 992px)
+  .col-lg
+    flex-basis: 0
+    flex-grow: 1
+    max-width: 100%
+
+  .col-lg-auto
+    flex: 0 0 auto
+    width: auto
+    max-width: none
+
+  .col-lg-1
+    flex: 0 0 8.33333%
+    max-width: 8.33333%
+
+  .col-lg-2
+    flex: 0 0 16.66667%
+    max-width: 16.66667%
+
+  .col-lg-3
+    flex: 0 0 25%
+    max-width: 25%
+
+  .col-lg-4
+    flex: 0 0 33.33333%
+    max-width: 33.33333%
+
+  .col-lg-5
+    flex: 0 0 41.66667%
+    max-width: 41.66667%
+
+  .col-lg-6, form.forms-sample .form-group
+    flex: 0 0 50%
+    max-width: 50%
+
+  .col-lg-7
+    flex: 0 0 58.33333%
+    max-width: 58.33333%
+
+  .col-lg-8
+    flex: 0 0 66.66667%
+    max-width: 66.66667%
+
+  .col-lg-9
+    flex: 0 0 75%
+    max-width: 75%
+
+  .col-lg-10
+    flex: 0 0 83.33333%
+    max-width: 83.33333%
+
+  .col-lg-11
+    flex: 0 0 91.66667%
+    max-width: 91.66667%
+
+  .col-lg-12
+    flex: 0 0 100%
+    max-width: 100%
+
+@media (min-width: 1200px)
+  .col-xl
+    flex-basis: 0
+    flex-grow: 1
+    max-width: 100%
+
+  .col-xl-auto
+    flex: 0 0 auto
+    width: auto
+    max-width: none
+
+  .col-xl-1
+    flex: 0 0 8.33333%
+    max-width: 8.33333%
+
+  .col-xl-2
+    flex: 0 0 16.66667%
+    max-width: 16.66667%
+
+  .col-xl-3
+    flex: 0 0 25%
+    max-width: 25%
+
+  .col-xl-4
+    flex: 0 0 33.33333%
+    max-width: 33.33333%
+
+  .col-xl-5
+    flex: 0 0 41.66667%
+    max-width: 41.66667%
+
+  .col-xl-6, form.forms-sample .form-group
+    flex: 0 0 50%
+    max-width: 50%
+
+  .col-xl-7
+    flex: 0 0 58.33333%
+    max-width: 58.33333%
+
+  .col-xl-8
+    flex: 0 0 66.66667%
+    max-width: 66.66667%
+
+  .col-xl-9
+    flex: 0 0 75%
+    max-width: 75%
+
+  .col-xl-10
+    flex: 0 0 83.33333%
+    max-width: 83.33333%
+
+  .col-xl-11
+    flex: 0 0 91.66667%
+    max-width: 91.66667%
+
+  .col-xl-12
+    flex: 0 0 100%
+    max-width: 100%
+
+.d-none
+  display: none !important
+
+.d-inline
+  display: inline !important
+
+.d-inline-block
+  display: inline-block !important
+
+.d-block
+  display: block !important
+
+.d-table
+  display: table !important
+
+.d-table-cell
+  display: table-cell !important
+
+.d-flex, .sidebar .nav .nav-item a.nav-link
+  display: flex !important
+
+.d-inline-flex
+  display: inline-flex !important
+
+@media (min-width: 576px)
+  .d-sm-none
+    display: none !important
+
+  .d-sm-inline
+    display: inline !important
+
+  .d-sm-inline-block
+    display: inline-block !important
+
+  .d-sm-block
+    display: block !important
+
+  .d-sm-table
+    display: table !important
+
+  .d-sm-table-cell
+    display: table-cell !important
+
+  .d-sm-flex
+    display: flex !important
+
+  .d-sm-inline-flex
+    display: inline-flex !important
+
+@media (min-width: 768px)
+  .d-md-none
+    display: none !important
+
+  .d-md-inline
+    display: inline !important
+
+  .d-md-inline-block
+    display: inline-block !important
+
+  .d-md-block
+    display: block !important
+
+  .d-md-table
+    display: table !important
+
+  .d-md-table-cell
+    display: table-cell !important
+
+  .d-md-flex
+    display: flex !important
+
+  .d-md-inline-flex
+    display: inline-flex !important
+
+@media (min-width: 992px)
+  .d-lg-none
+    display: none !important
+
+  .d-lg-inline
+    display: inline !important
+
+  .d-lg-inline-block
+    display: inline-block !important
+
+  .d-lg-block
+    display: block !important
+
+  .d-lg-table
+    display: table !important
+
+  .d-lg-table-cell
+    display: table-cell !important
+
+  .d-lg-flex
+    display: flex !important
+
+  .d-lg-inline-flex
+    display: inline-flex !important
+
+@media (min-width: 1200px)
+  .d-xl-none
+    display: none !important
+
+  .d-xl-inline
+    display: inline !important
+
+  .d-xl-inline-block
+    display: inline-block !important
+
+  .d-xl-block
+    display: block !important
+
+  .d-xl-table
+    display: table !important
+
+  .d-xl-table-cell
+    display: table-cell !important
+
+  .d-xl-flex
+    display: flex !important
+
+  .d-xl-inline-flex
+    display: inline-flex !important
+
+.fixed-top
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  z-index: 1030
+
+.fixed-bottom
+  position: fixed
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1030
+
+@supports (position: sticky)
+  .sticky-top
+    position: sticky
+    top: 0
+    z-index: 1020
+
+.ml-2, .mx-2
+  margin-left: 0.5rem !important
+
+.pl-4, .px-4
+  padding-left: 1.5rem !important
+
+.sidebar
+  font-family: "Proxima Nova Bold"
+  background-color: #34495e
+  min-height: 100vh
+  padding: 0
+  position: fixed
+  width: 215px
+  z-index: 1000
+  transition: width .8s ease
+
+  .user-info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 10px 0 40px
+
+    img
+      max-width: 85px
+      width: 100%
+      border-radius: 100%
+      margin: 0 auto 15px
+      border: 3px solid #fff
+
+    p
+      &.name
+        text-align: center
+        margin-bottom: 0
+        font-size: 13px
+        font-weight: 500
+
+      &.designation
+        text-align: center
+        margin-bottom: 15px
+        font-size: 12px
+        font-weight: 500
+        color: #cacdd7
+
+    span.online
+      border-radius: 3px
+      background: #58d8a3
+      margin: auto
+      text-align: center
+
+      &:after
+        content: "Online"
+        color: #fff
+        display: block
+        font-size: 10.5px
+        padding: 2px 6px 0
+
+  .nav
+    display: block
+    padding: 10px 0px 10px 20px
+
+    .item-category
+      color: grey
+      font-weight: 500
+
+    .nav-item
+      &:last-child
+        margin-bottom: 30px
+
+      a.nav-link
+        color: #636c72
+        padding: 1em
+        white-space: nowrap
+        font-size: 13px
+
+        .fa:first-child
+          margin-right: 0.5em
+
+        img
+          width: 16px
+          height: 16px
+          margin-right: 15px
+
+        .menu-title
+          display: inline-block
+
+          .fa
+            margin-left: 0.5em
+
+        &:hover
+          color: #3f4549
+
+      &.active > .nav-link
+        color: #1991EB
+
+    &.sub-menu
+      padding-left: 2.5em
+
+      .nav-item.active .nav-link
+        border-left: 0
+        background: transparent
+
+  a:hover
+    text-decoration: none
+
+@media screen and (max-width: 992px)
+  .row-offcanvas
+    visibility: hidden
+    -webkit-transition: all 0.25s ease-out
+    -o-transition: all 0.25s ease-out
+    transition: all 0.25s ease-out
+
+    &.row-offcanvas-right
+      right: 0
+
+      .sidebar-offcanvas
+        visibility: hidden
+
+      &.active
+        right: 50%
+
+        .sidebar-offcanvas
+          right: -50%
+
+    &.row-offcanvas-left
+      left: 0
+
+      .sidebar-offcanvas
+        left: -100%
+
+      &.active
+        left: 50%
+
+        .sidebar-offcanvas
+          left: -50%
+
+    .sidebar-offcanvas
+      position: absolute
+      top: 0
+      width: 50%
+
+@media screen and (max-width: 350px)
+  .row-offcanvas
+    &.row-offcanvas-right.active
+      right: 100%
+
+      .sidebar-offcanvas
+        right: -100%
+
+    .sidebar-offcanvas
+      width: 100%
+
+.navbar
+  width: 100%
+
+.navbar-nav
+  flex-direction: row
+
+.navbar .navbar-brand-wrapper
+  transition: width .8s ease
+  width: 215px
+
+  .navbar-brand
+    color: #5a5f61
+    font-size: 2rem
+    margin-right: 0
+
+    &:active, &:focus, &:hover
+      color: #424546
+
+    img
+      max-width: 100%
+      width: 60%
+      margin: auto
+
+  .brand-logo-mini
+    display: none
+
+@media (max-width: 992px)
+  .navbar
+    flex-direction: row
+
+    .logo img
+      margin-left: 25px
+
+    .navbar-brand-wrapper
+      display: none
+
+      p
+        display: none
+
+input
+  &[type="search"]
+    color: #96a6a7
+    font-size: 13px
+    width: 105px
+
+  color: #96a6a7
+  font-size: 13px
+  width: 105px
+
+.form-control
+  color: #96a6a7
+  font-size: 13px
+  width: 105px
+
+.content-wrapper
+  position: absolute
+  margin-left: 200px
+  min-height: 100vh (-75px)
+  padding-top: 2px
+  transition: all .8s ease
+  width: calc(100% - 215px)
+
+  &.full-page-wrapper
+    margin-left: 0
+    width: 100%
+
+@media (max-width: 992px)
+  .content-wrapper
+    margin-left: -15px
+    width: 100%
+
+.container-scroller
+  height: 100vh
+  position: relative
+
+.navbar.fixed-top + .container-fluid
+  padding-top: 76px
+
+body
+  font-family: 'Proxima Nova Regular'
+  font-weight: normal
+  font-size: normal
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+html
+  font-family: 'Proxima Nova Regular'
+  font-weight: normal
+  font-size: normal
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  letter-spacing: 0.15px
+
+.logo
+  margin-left: auto
+  margin-right: auto
+
+.bg-profile
+  font-family: 'Proxima Nova Regular'
+  font-size: 13px
+  background-color: #2ecc71
+
+.form-control
+  padding: 0px
+  width: 100px
+
+.menu-title
+  color: #96a6a7
+  font-size: 16px
+
+.sidebar-menu .active
+  .nav-link
+    background-color: #243342
+
+  svg
+    fill: #2ecc71
+
+  span
+    color: white
+
+.starrating >
+  input
+    display: none
+
+  label
+    &:before
+      content: "\f005"
+      margin: 2px
+      font-size: 16px
+      font-family: FontAwesome
+      display: inline-block
+
+    color: #96a6a7
+
+  input
+    &:checked ~ label, &:hover ~ label
+      color: #ff3908
+
+@media (max-width: 560px)
+  .profile-info
+    padding-left: 32px
+
+.profile-name
+  color: black
+  padding-right: 5px
+  font-family: "Proxima Nova Bold"
+  font-size: 20px
+
+.profile-control
+  width: 100%
+
+#pencil, #exit
+  background-color: white
+  border: #96a6a7 2px solid
+
+#pencil:hover, #exit:hover
+  background-color: #2ecc71
+  fill: white
+  border-color: #2ecc71
+
+  svg
+    background-color: #2ecc71
+    fill: white
+    border-color: #2ecc71
+
+.content
+  font-family: "Proxima Nova Bold"
+  background-color: white
+  border-color: white
+  text-decoration: none
+  color: black
+  font-size: 15px
+
+.content-switcher .active
+  border-bottom: #2ecc71 3px solid
+
+.content-general
+  font-size: 14px
+  color: #96a6a7
+  background: #ecf0f1
+  min-height: calc(100vh - 237px)
+  padding: 2rem 2rem
+  transition: all .8s ease
+  width: 100%
+
+@media (max-width: 992px)
+  .content-wrapper
+    margin-left: -15px
+    width: 100%
+
+  .cw-col-3
+    margin-top: 32px
+
+  @media (max-width: 575px)
+    .cw-col-2
+      margin-top: 32px
+
+.content-wrapper.full-page-wrapper
+  margin-left: 0
+  width: 100%
+
+.content-general
+  .headline
+    height: 80px
+    text-align: center
+
+  p
+    height: 17px
+    margin-bottom: 17px
+    overflow: hidden
+    text-overflow: ellipsis
+    -ms-text-overflow: ellipsis
+    -o-text-overflow: ellipsis
+
+  .number
+    margin-top: 6px
+    height: 35px
+    margin-bottom: 6px
+
+  .line
+    padding-left: 1.5em
+    padding-top: 15px
+    height: 50px
+    border-bottom: #ecf0f1 1px solid
+
+    p
+      height: 17px
+      margin-bottom: 17px
+      overflow: hidden
+      text-overflow: ellipsis
+      -ms-text-overflow: ellipsis
+      -o-text-overflow: ellipsis
+
+  .row
+    margin-left: 0px
+    margin-right: 0px
+
+  .active, .line
+    background: white
+
+.number
+  font-family: "Proxima Nova Bold"
+  font-size: 32px
+
+.show-more
+  height: 40px
+  padding-top: 10px
+  background-color: white
+  font-family: "Proxima Nova Bold"
+
+  a
+    color: black
+    text-decoration: none
+
+.cw-col-1 .active
+  color: #ec8d0f
+
+.cw-col-2 .active
+  color: #a60fec
+
+.cw-col-3 .active
+  color: #49b691
+
+.content-general
+  .line:hover
+    background-color: #eaecec
+    color: black
+    padding-left: 16px
+
+  .cw-col-1 .line:hover
+    border-left: #ec8d0f 5px solid
+
+  .cw-col-2 .line:hover
+    border-left: #a60fec 5px solid
+
+  .cw-col-3 .line:hover
+    border-left: #49b691 5px solid
+
+.experience
+  margin-top: 32px
+  padding-right: 0px
+  border-right: #ecf0f1 1px solid
+
+  div
+    background: white
+
+@media (max-width: 1199px)
+  .experience
+    padding-right: 15px
+
+.friends div
+  background: white
+
+.experience
+  .text-center
+    padding: 0px
+
+  p
+    margin-bottom: 0px
+    padding: 1rem 1rem
+    padding-bottom: 32px
+    padding-left: 32px
+    font-size: 16px
+
+.friends p
+  margin-bottom: 0px
+  padding: 1rem 1rem
+  padding-bottom: 32px
+  padding-left: 32px
+  font-size: 16px
+  overflow: hidden
+  text-overflow: ellipsis
+  -ms-text-overflow: ellipsis
+  -o-text-overflow: ellipsis
+
+.experience .number
+  font-size: 32px
+  font-family: "Proxima Nova Bold"
+  color: #2ecc71
+
+.progress-bar-vertical
+  align-items: flex-end
+  margin-right: 0px
+  padding: 0px
+  background: #ecf0f1 !important
+
+  .progress-bar
+    width: 100%
+    min-height: 0%
+    max-height: 100%
+    -webkit-transition: height 0.6s ease
+    -o-transition: height 0.6s ease
+    transition: height 0.6s ease
+
+.progress
+  height: 70%
+  border-radius: 0px
+
+.progress-bar
+  background: #2ecc71 !important
+
+.friends
+  margin-top: 32px
+  padding-left: 0px
+
+@media (max-width: 999px)
+  .friends
+    padding-left: 15px
+  .friends .line
+    height: 70px
+  .friends .dt
+    width: 60%
+
+.content-general .friends .line:hover
+  border-left: #a60fec 5px solid
+
+.friends .head
+  font-family: "Proxima Nova Bold"
+  border-bottom: #ecf0f1 1px solid
+  padding: 1rem 1rem
+  padding-bottom: 32px
+  padding-left: 32px
+  font-size: 16px
+
+.friends p
+  padding: 0;
+  font-size: 14px
+
+.friends p .bold
+  font-family: "Proxima Nova Bold"
+  color: black
+
+.friends .line
+  padding-top: 10px;
+
+.content-switcher
+  width: 98%
+  
+.for-plot
+	box-sizing: border-box
+	height: 116px
+	padding: 0px 32px 0px 32px
+
+.plot
+	width: 100%
+	height: 80%
+	font-size: 14px
+	line-height: 1.2em
+
+.flot-base
+  background: linear-gradient(#ecf0f1 50%, white 50%)!important
+  background-size: 100% 47px!important
+  z-index: 999
+  padding-left: 3%
+  padding-right: 3%
+
+@media(max-width: 1199px)
+  .flot-base
+    padding-left: 4%
+    padding-right: 4%
+
+@media(max-width: 719px)
+  .flot-base
+    padding-left: 3.5%
+    padding-right: 3.5%
+
+.flot-text
+  color: #96a6a7!important
+  background: white!important
+
+.days
+  margin-top: 3px
+  font-size: 11px
